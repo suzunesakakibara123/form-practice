@@ -8,6 +8,207 @@
     <title>form-practice</title>
   </head>
   <body>
-    <!-- この行は削除してください -->
+    <div class="entry-page">
+    <div class="container">
+      <header class="page-header">
+        <div>
+          <p class="logo-text">Entry</p>
+          <h1>アカウント登録</h1>
+        </div>
+        <p class="page-path">TOP ＞ アカウント登録</p>
+      </header>
+
+      <div class="entry-layout">
+        <aside class="step-area">
+          <ol class="step-list">
+            <li class="step-item is-current">
+              <span class="step-number">STEP01</span>
+              <span class="step-text">入力情報</span>
+            </li>
+            <li class="step-item">
+              <span class="step-number">STEP02</span>
+              <span class="step-text">入力内容の確認</span>
+            </li>
+            <li class="step-item">
+              <span class="step-number">STEP03</span>
+              <span class="step-text">登録完了</span>
+            </li>
+          </ol>
+        </aside>
+
+        <main class="form-area">
+          <form action="#" method="post" class="entry-form">
+            <div class="form-row">
+              <label for="name" class="form-label">
+                <span class="required">必須</span>
+                <span>お名前</span>
+              </label>
+              <div class="form-input">
+                <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="username" class="form-label">
+                <span class="required">必須</span>
+                <span>ユーザー名</span>
+              </label>
+              <div class="form-input">
+                <input type="text" id="username" name="username" placeholder="yamada_taro" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="email" class="form-label">
+                <span class="required">必須</span>
+                <span>メールアドレス</span>
+              </label>
+              <div class="form-input">
+                <input type="email" id="email" name="email" placeholder="sample@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="password" class="form-label">
+                <span class="required">必須</span>
+                <span>パスワード</span>
+              </label>
+              <div class="form-input">
+                <input type="password" id="password" name="password" placeholder="8文字以上で入力してください" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="password-confirm" class="form-label">
+                <span class="required">必須</span>
+                <span>パスワード確認</span>
+              </label>
+              <div class="form-input">
+                <input type="password" id="password-confirm" name="password_confirm" placeholder="もう一度入力してください" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="birth-year" class="form-label">
+                <span class="required">必須</span>
+                <span>生年月日</span>
+              </label>
+              <div class="form-input">
+                <div class="birth-select-wrap is_flex">
+                  <select id="birth-year" name="birth_year" required>
+                    <option value="">年</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                  </select>
+
+                  <select id="birth-month" name="birth_month" required>
+                    <option value="">月</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+
+                  <select id="birth-day" name="birth_day" required>
+                    <option value="">日</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="prefecture" class="form-label">
+                <span class="required">必須</span>
+                <span>都道府県</span>
+              </label>
+              <div class="form-input">
+                <select id="prefecture" name="prefecture" required>
+                  <option value="">選択してください</option>
+                  <option value="tokyo">東京都</option>
+                  <option value="kanagawa">神奈川県</option>
+                  <option value="saitama">埼玉県</option>
+                  <option value="chiba">千葉県</option>
+                  <option value="osaka">大阪府</option>
+                  <option value="aichi">愛知県</option>
+                  <option value="fukuoka">福岡県</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="agree" class="form-label">
+                <span class="required">必須</span>
+                <span>利用規約</span>
+              </label>
+              <div class="form-input">
+                <label class="check-item" for="agree">
+                  <input type="checkbox" id="agree" name="agree" required />
+                  <span>利用規約に同意する</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="submit-button">登録する</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
